@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 400px;
+            background-color: aquamarine;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 20px;
+            text-align: center;
+            
+        }
+
+        .container .item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">item1 hello world Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta est ipsam perferendis! Repellendus ipsa a alias excepturi? Sint sequi iste doloribus laudantium deserunt error aliquid eum suscipit, itaque perferendis ratione!</div>
+        <div>item2</div>
+        <div>item3</div>
+        <div>item4</div>
+        <div>item5</div>
+    </div>
+</body>
+</html>

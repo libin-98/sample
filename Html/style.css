@@ -1,0 +1,25 @@
+h2{ color: green;
+    background-color: yellow;
+font-size: 30px;
+font-style: normal;}
+.abc{ color: blue;
+background-color: crimson;
+font-size: 25px;
+font-style:oblique;}
+#xyz{
+color: white;
+background-color: violet;
+font-size: 30px;
+font-style: italic;
+}
+.pqr{
+    color: yellow;
+    background-color: green;
+    font-size: 30px;
+    font-style: italic;
+    /* border: 1px;
+    border-color: black; */
+    stroke: black;
+    stroke-width: 5px;
+    
+}

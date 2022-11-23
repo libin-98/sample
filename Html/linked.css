@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(11, 142, 156);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.linked{
+    background-color: rgb(11, 142, 156);
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.heading{
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(11, 142, 156);
+    box-sizing: border-box;
+    padding: 5px 20px;
+    text-align: center;
+}
+input{
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(198, 193, 193);
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+h5{
+    color: white;
+    font-size: 35px;
+}
+span{
+    color: blue;
+    background-color: white;
+}
+.field{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    /* top: 0px; */
+    left: 180px;
+    padding: 10px 20px;
+
+}
+.terms{ 
+    width: 100%;
+    height:50px;
+    text-align: center;
+    background-color:white;
+}
+.d{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(11, 142, 156);
+    position: absolute;
+    top: 600px;
+    text-align: center;
+}
+
+.join{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(40, 29, 194);
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.or{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sign{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+
+}
