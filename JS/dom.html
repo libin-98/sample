@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+</head>
+<body>
+    <p id="a">Helo  ssssccffwd world</p>
+    <p class="abc">Hello</p>
+    <p class="abc">Hello</p>
+    <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png">
+
+
+    <script>
+        document.getElementById('a').innerHTML="Good morning";
+        document.getElementById('a').style.color="red";
+        document.getElementsByTagName('p')[1].innerHTML="Tag Name";
+        document.getElementsByClassName('abc')[1].innerHTML="Good morning";
+       document.getElementById('image').src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
+        document.getElementsByClassName('abc')[0].style.display="block";
+
+
+        document.querySelector('#a').innerHTML="hello";
+        document.querySelectorAll('.abc')[0].innerHTML="Good ";
+    </script>
+</body>
+</html>
