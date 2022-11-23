@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+        nav ul li{
+            border: 1px solid black;
+            padding: 15px;
+            cursor: pointer;
+            /* flex:auto; */
+            text-align: center;
+
+        }
+
+        nav ul li:hover{
+            background-color: antiquewhite;
+        }
+        @media only screen and (max-width: 400px){
+            nav ul{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>contact</li>
+            <li>FeedBack</li>
+        </ul>
+    </nav>
+</body>
+</html>
