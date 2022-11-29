@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let a= `{
+        "name": "prabhath",
+        "age":26,
+        "place":"kozhikkod"
+    }`
+    console.log(a)
+    console.log(typeof a); 
+    let b=JSON.parse(a)
+
+    console.log(b);
+    console.log(b.name);
+    console.log(b.place);
+    console.log(b.age);
+
+//   usage  of `` 
+
+
+let e="helloo" 
+let f="good"
+let g="morning"
+
+let h=e +f +g
+console.log(h)        //=>> hellogoodmorning
+
+
+let i=`${e} ${f} ${g}`
+console.log(i)       //=>> hello good morning
+
+
+</script>
+    
+</body>
+</html>

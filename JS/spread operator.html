@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let database={
+            name:"sample name",
+            id:"sampe id",
+            department:"dept",
+            college: "GCEK",
+            joining_year:2015,
+            university:"KTU"
+            
+        }
+        let libin={...database}
+        let hari={...database}
+        let adarsh={...database}
+        let ragin={...database}
+        let aswin={...database}
+        let ajay={...database}
+        libin.name="libin"
+        libin.id="15b052"
+        libin.departmet="ece"
+
+        libin.name="libin"
+        libin.id="15b052"
+        libin.department="ece"
+
+        hari.name="hari"
+        hari.id="15b049"
+        hari.department="ece"
+
+        adarsh.name="adarsh"
+        adarsh.id="15b022"
+        adarsh.department="ece"
+
+        ragin.name="ragin"
+        ragin.id="15b072"
+        ragin.department="ece"
+
+        aswin.name="libin"
+        aswin.id="15b152"
+        aswin.department="cse"
+
+        ajay.name="ajay"
+        ajay.id="15b252"
+        ajay.department="eee"
+       
+        console.log(database)
+        console.log(libin)
+        console.log(ragin)
+        console.log(hari)
+        console.log(adarsh)
+        console.log(aswin)
+        console.log(ajay)
+
+
+        let wish=['good','event']
+        let a=[...wish]
+        let b=[...wish]
+        let c=[...wish]
+        let d=[...wish]
+        a[1]='morning'
+        b[1]='after noon'
+        c[1]='evening'
+        d[1]='night'
+
+
+        console.log(wish)
+        console.log(a)
+         console.log(b)
+        console.log(c)
+        console.log(d)
+
+
+        let e=["hello","ok"]
+        let f=[...a,...e]
+        let students={...database,libin,hari,adarsh,ragin,aswin,ajay}
+        console.log(students)
+        g=[...wish,e]
+
+
+        h={...a}
+        console.log(f)
+        console.log(g)
+        console.log(h)
+
+
+
+        // trest operator.............!!!!!!!
+
+
+        let array=[25,8,96,85,69,86,12,56,63]
+        // destruction operatioin in arrayy
+        let [first,second,...rest]=array    
+        console.log(first)
+        console.log(rest)
+
+
+        // destruction operatioin in object
+        let{name,id,...data}=libin
+        console.log(name);
+        console.log(id);
+        console.log(data);
+
+
+
+
+    </script>
+</body>
+</html>

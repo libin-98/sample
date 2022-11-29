@@ -1,5 +1,34 @@
-.ab{
+/* .ab{
     font-size: 30px;
     color: green;
     background-color: aqua;
+} */
+*{
+    padding: 0;
+    margin: 0;
+}
+.table{
+    border: 2px solid red;
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    caption-side:  start inline-start;
+    border-collapse: collapse;
+    text-align: center;
+
+
+}
+td{
+    border:1px solid blue;
+    padding:2px 10px;
+}
+th{
+    border:1px solid blue;
+    padding:2px 10px;
+    background-color: rgb(132, 132, 132);
+
+}
+
+
+tr:nth-child(even){
+    background-color: white;
 }
