@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <input  id="a" type="text" placeholder="Name"><br><br>
+    <input  id="b" type="email" placeholder="Email"><br><br>
+    <input  id="c" type="text" placeholder="Admission NO"><br><br>
+    <button onclick=" newdata({name:n.value, age:a.value, place:p.value},fill)">SUBMIT</button><br>
+    <hr>
+
+    
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL ID</th>
+                <th>ADMISSION NO</th>
+            </tr>
+            
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    
+
+    <script>
+        let n=document.getElementById("a")
+        let a=document.getElementById("b")
+        let p=document.getElementById("c")
+
+        let arr=[ ]
+//!!!!!!!!!!.........table creation using foreach methode........!!!!!!!!!!!!!!!
+
+
+        function fill(){
+            let d="";
+            arr.forEach(value => {
+                d+=`<tr><td>${value.name}</td><td>${value.age}</td><td>${value.place}</td></tr>`
+            });
+            document.getElementById("data").innerHTML=d
+        }
+
+//!!!!!!!!!!!............ push data in table using callback methode...............!!!!!!!
+
+        function newdata(data,ca){
+            arr.push(data);
+            ca()
+            if(n.value !="" || a.value !="" || p.value !=""){
+                n.value=""
+                a.value=""
+                p.value=""
+
+            }
+            
+        }
+
+// !!!!!!!!.......callbacking function fill().........!!!!!!!!!!
+// here fill() calls in buttun
+
+
+    </script>
+</body>
+</html>

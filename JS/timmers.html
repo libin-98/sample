@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="a">START</button>
+
+    <span id="second"></span>:<span id="mil"></span>
+    <script>
+        let value=0;
+        let value2=0;
+   ;
+
+      let timer=  setInterval(() => {
+             value2++
+             document.getElementById('second').innerHTML=value;
+             document.getElementById('mil').innerHTML=value2;
+           
+                if(value2==99){
+                 if (value==2){
+                        clearInterval(timer)
+                    }
+                 else{
+                        value2=0
+                        value++
+                    }
+                }
+        }, 10);
+
+
+setTimeout(() => {
+    document.getElementById("a").innerHTML="STOP"
+}, 2990);
+
+
+    // let num=0;
+    // let timmer=setInterval(()=>{
+    //     document.write('*')
+    //     num++;
+    //     if(num==10){
+    //         clearInterval(timmer)
+    //     }
+    // },100)
+    // setInterval(() => {
+        
+    // }, interval);
+    </script>
+</body>
+</html>

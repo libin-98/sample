@@ -7,14 +7,49 @@
     padding: 0;
     margin: 0;
 }
+body{
+    margin: 20px;
+}
+input{
+    border: 2px solid rgb(249, 155, 48);
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(254, 229, 197);
+    opacity: 0.8;
+}
+input:focus{
+    opacity: 1;
+    border: none;
+    outline: 2px solid orange;
+    box-shadow:5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+button{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    opacity: 0.75;
+}
+button:hover{
+    opacity: 1;
+}
 .table{
     border: 2px solid red;
     background-color: rgb(205, 205, 205);
     font-size: 20px;
     caption-side:  start inline-start;
     border-collapse: collapse;
-    text-align: center;
-
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 td{

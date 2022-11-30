@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+    <style>
+        .a{
+            width: 500px;
+            text-align: left;
+            background-color: rgb(121, 250, 250);
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            padding:20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <input  id="name" type="text" placeholder="Enter your name">
+    <input  id="email" type="email" placeholder="Enter your email"><br>
+    <input  id="age" type="number" placeholder="Enter your age">
+    <input  id="address" type="text" placeholder="Enter your address"><br>
+    <input  id="job" type="text" placeholder="Enter your job">
+    <input  id="hobbies" type="text" placeholder="Enter your hobbies"><br>
+    <button onclick="submit()">SUBMIT</button><br><br>
+
+    <!-- <div class="a"> -->
+        <p id="a">NAME:</p>
+        <p id="b">EMAIL:</p>
+        <p id="c">AGE:</p>
+        <p id="d">ADDRESS:</p>
+        <p id="e">JOB:</p>
+        <p id="f">HOBBIES:</p>
+    <!-- </div> -->
+
+
+    <script>
+        let obj={
+            name: "libin.k", 
+            age:25,
+            place:"kannur"
+        }
+
+        let details=[
+    {
+        name: "libin.k", 
+        age:25,
+        place:"kannur"
+    },
+    {
+        name: "hari",
+        age:25,
+        place:"nileswaram"
+    },
+    {
+        name: "prabhath",
+        age:26,
+        place:"kozhikkod"
+    },
+    {
+        name: "ragin",
+        age:27,
+        place:"malappuram"
+    }
+
+]
+
+
+        // let libin=JSON.stringify(obj)
+        // let det=JSON.stringify(details)
+        // localStorage.setItem("details",libin)
+        // localStorage.setItem("students",det)
+        // document.write(localStorage.getItem("students"))
+
+
+        ////.................................!!!!!!!................/////////
+
+    function submit(){
+        let a=JSON.stringify(document.getElementById("name").value)
+        let b=JSON.stringify(document.getElementById("email").value)
+        let c=JSON.stringify(document.getElementById("age").value)
+        let d=JSON.stringify(document.getElementById("address").value)
+        let e=JSON.stringify(document.getElementById("job").value)
+        let f=JSON.stringify(document.getElementById("hobbies").value)
+        localStorage.clear()
+        localStorage.setItem("name",a)
+        localStorage.setItem("email",b)
+        localStorage.setItem("age",c)
+        localStorage.setItem("address",d)
+        localStorage.setItem("job",e)
+        localStorage.setItem("hobbies",f)
+        document.getElementById('a').innerHTML="NAME: "+JSON.parse(localStorage.getItem('name'))
+        document.getElementById('b').innerHTML="EMAIL: "+JSON.parse(localStorage.getItem('email'))
+        document.getElementById('c').innerHTML="AGE: "+JSON.parse(localStorage.getItem('age'))
+        document.getElementById('d').innerHTML="ADDRESS: "+JSON.parse(localStorage.getItem('address'))
+        document.getElementById('e').innerHTML="JOB: "+JSON.parse(localStorage.getItem('job'))
+        document.getElementById('f').innerHTML="HOBBIES: "+JSON.parse(localStorage.getItem('hobbies'))
+        // localStorage.clear()
+}
+
+document.writeln(localStorage.key(0))
+document.writeln(localStorage.key(1))  
+document.writeln(localStorage.key(2))
+document.writeln(localStorage.key(3))
+document.writeln(localStorage.key(4))
+document.writeln(localStorage.key(5))
+   
+
+
+
+    </script>
+</body>
+</html>
